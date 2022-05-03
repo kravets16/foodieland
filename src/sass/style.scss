@@ -1,0 +1,60 @@
+/* base */
+@import 'base/reset';
+@import 'base/variables';
+@import 'base/mixins';
+
+/* blocks */
+@import 'blocks/buttons';
+@import 'blocks/nav';
+@import 'blocks/card';
+@import 'blocks/categories';
+@import 'blocks/chef';
+@import 'blocks/check';
+@import 'blocks/try';
+@import 'blocks/subscribe';
+@import 'blocks/footer';
+
+
+
+/* settings */
+body {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+}
+
+.container {
+    max-width: 1310px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+h2 {
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 58px;
+    letter-spacing: -0.04em;
+    color: $main-color;
+}
+
+h3 {
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: -0.04em;
+    line-height: 144%;
+    color: $main-color;
+}
+
+.text {
+    font-weight: 400;
+    font-size: 16px;
+    color: $text-color;
+}
+
+@media (max-width: 953px) {
+    h2 {
+        font-size: 35px;
+    }
+    .text {
+        font-size: 14px;
+    }
+}
