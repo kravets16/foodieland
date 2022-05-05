@@ -6,11 +6,34 @@
             transform: scale(1.02);
         }
     }
+    &__large {
+        background: linear-gradient(180deg, rgba(231, 249, 253, 0) 0%, #E7F9FD 100%);
+        border-radius: 30px;
+    }
     &__small-img {
         position: relative;
         overflow: hidden;
         width: 290px;
         height: 200px;
+        border-radius: 30px;
+        &:after {
+            content: ' ';
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 48px;
+            height: 48px;
+            border-radius: 100%;
+            z-index: 1000;
+            background: url(../../icons/heart_white.png) center (center) no-repeat, #FFF;
+        }
+    }
+    &__large-img {
+        margin: 16px 16px 0 16px;
+        position: relative;
+        overflow: hidden;
+        width: 368px;
+        height: 250px;
         border-radius: 20px;
         &:after {
             content: ' ';
@@ -33,9 +56,20 @@
         letter-spacing: -0.04em;
         color: $main-color;
     }
+    &__large-title {
+        max-width: 352px;
+        font-weight: 600;
+        margin: 24px ;
+        font-size: 24px;
+        line-height: 133%;
+        letter-spacing: -0.04em;
+    }
     &__row {
         display: flex;
         align-items: center;
+        &-large {
+            margin: 0 0 32px 24px;
+        }
     }
     &__time {
         margin-right: 24px;

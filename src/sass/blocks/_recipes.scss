@@ -1,0 +1,11 @@
+.recipes {
+    padding-top: 103px;
+    &__title {
+        text-align: center;
+    }
+    &__text {
+        margin: 24px auto 96px auto;
+        max-width: 706px;
+        text-align: center;
+    }
+}
