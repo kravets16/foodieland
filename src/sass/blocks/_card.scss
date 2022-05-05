@@ -7,8 +7,14 @@
         }
     }
     &__large {
+        max-width: 400px;
+        margin: 0 auto;
         background: linear-gradient(180deg, rgba(231, 249, 253, 0) 0%, #E7F9FD 100%);
         border-radius: 30px;
+        transition: all .3s ease;
+        &:hover {
+            transform: scale(1.02);
+        }
     }
     &__small-img {
         position: relative;
@@ -91,5 +97,37 @@
         line-height: 17px;
         letter-spacing: -0.02em;
         color: rgba(0, 0, 0, 0.6);
+    }
+    &__banner {
+        margin: 0 auto;
+        max-width: 400px;
+        max-height: 434px;
+        transition: all .3s ease;
+        &:hover {
+            transform: scale(1.02);
+        }
+    }
+}
+
+@media (max-width: 430px) {
+    .card {
+        &__large {
+            max-width: 400px;
+        }
+        &__large-img {
+            width: 368px;
+            height: 250px;
+
+            
+        }
+        &__banner {
+            margin: 0 auto;
+            max-width: 400px;
+            max-height: 434px;
+            transition: all .3s ease;
+            &:hover {
+                transform: scale(1.02);
+            }
+        }
     }
 }
